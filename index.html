@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="./imgs/로고.png" alt="logo.png"></a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Machine<br>It's <span>classic</span></h2>
+                <p>스피커 분야에서 다년간 시장 점유율 1위를 달리고 있는 국내 대표 스피커 Britz 입니다.
+                    1997년 10월에 설립된 저희 브리츠인터내셔널은 2채널 스피커에서 5.1 채널 스피커까지 다양한 스피커군을 통해 일반 유저에서 매니아까지 고객의 귀와 마음을 사로잡고 있는 브리츠 스피커는 국내뿐만 아니라 해외로 나아가 전세계인의 귀와 마음을 사로잡는 명실상부한 스피커의 대명사가 되도록 노력 하겠습니다.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="./imgs/턴테이블.png" alt="img1" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/턴테이블.png" alt="" onclick="imgSlider('./imgs/턴테이블.png');
+                changeCircleColor('#e5a123')"></li>
+            <li><img src="./imgs/1.png" alt="" onclick="imgSlider('./imgs/1.png');
+            changeCircleColor('#C48D4D')"></li>
+            <li><img src="./imgs/2.png" alt="" onclick="imgSlider('./imgs/2.png');
+            changeCircleColor('#AB897D')"></li>
+            <li><img src="./imgs/3.png" alt="" onclick="imgSlider('./imgs/3.png');
+            changeCircleColor('#8C3723')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./imgs/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./imgs/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything
+        }
+        function changeCircleColor (color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
